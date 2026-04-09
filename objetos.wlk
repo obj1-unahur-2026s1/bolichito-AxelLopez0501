@@ -75,6 +75,52 @@ object placa {
     }
 }
 
+object arito {
+    method getColor(){
+      return celeste
+    }
+    method getMat(){
+      return cobre
+    }
+    method getPeso(){
+      return 180
+    }
+}
+
+object banquito {
+    var color = pardo
+
+    method setColor(nuevoColor){
+      color = nuevoColor
+    }
+    method getColor(){
+      return color
+    }
+    method getMat(){
+      return vidrio
+    }
+    method getPeso(){
+      return 1700
+    }
+}
+
+object cajita { 
+    var objeto = arito
+    
+    method setObjeto(nuevoObjeto){
+      objeto = nuevoObjeto
+    }
+    method getColor(){
+      return rojo
+    }
+    method getMat(){
+      return cobre
+    }
+    method getPeso(){
+      return 400 + objeto.getPeso()
+    }
+}
+
 // COLORES
 object rojo { 
     method esFuerte(){
@@ -97,6 +143,12 @@ object celeste {
 object pardo { 
     method esFuerte(){
       return false
+    }
+}
+
+object naranja {
+    method esFuerte(){
+      return true
     }
 }
 
