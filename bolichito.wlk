@@ -21,8 +21,14 @@ object bolichito{
     method tieneUnObjetoColor(unColor){
         return objetoMostrador.getColor() == unColor || objetoVidriera.getColor() == unColor
     }
-
     method puedeOfrecerleA(unaPersona){
         return unaPersona.leGusta(objetoMostrador) || unaPersona.leGusta(objetoVidriera)
+    }
+
+    method cambiarObjetoMostrador(nuevoObjeto){
+        objetoMostrador = nuevoObjeto
+    }
+    method cambiarObjetoVidriera(nuevoObjeto){
+        objetoVidriera = nuevoObjeto
     }
 }
